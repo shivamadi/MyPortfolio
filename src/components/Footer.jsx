@@ -33,8 +33,8 @@ const Footer = () => {
         {/* Cinematic Social Dock */}
         <div className="flex items-center gap-8">
           {[
-            { icon: <FaLinkedin size={28} />, url: 'https://linkedin.com/in/shivam-kumar09', label: 'LinkedIn' },
-            { icon: <FaGithub size={28} />, url: 'https://github.com/Shivam0l', label: 'GitHub' },
+            { icon: <FaLinkedin size={28} />, url: 'https://linkedin.com/in/shivam-kumar00', label: 'LinkedIn' },
+            { icon: <FaGithub size={28} />, url: 'https://github.com/shivamadi', label: 'GitHub' },
             { icon: <Mail size={28} />, url: 'mailto:shivamadi306@gmail.com', label: 'Email' }
           ].map((social, i) => (
             <motion.a

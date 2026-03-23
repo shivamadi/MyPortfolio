@@ -177,8 +177,8 @@ const Hero = () => {
 
           <div className="flex gap-6 pt-10">
             {[
-              { icon: <FaLinkedin size={26} />, url: 'https://linkedin.com/in/shivam-kumar09' },
-              { icon: <FaGithub size={26} />, url: 'https://github.com/Shivam0l' },
+              { icon: <FaLinkedin size={26} />, url: 'https://linkedin.com/in/shivam-kumar00' },
+              { icon: <FaGithub size={26} />, url: 'https://github.com/shivamadi' },
               { icon: <Mail size={26} />, url: 'mailto:shivamadi306@gmail.com' }
             ].map((social, i) => (
               <motion.a
