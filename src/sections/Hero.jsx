@@ -3,6 +3,7 @@ import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion';
 import { ArrowRight, Download, Mail } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import heroImage from '../assets/hero.jpeg';
+import resumePdf from '../assets/MycvPdf.pdf';
 import TiltCard from '../components/TiltCard';
 
 const Hero = () => {
@@ -165,8 +166,8 @@ const Hero = () => {
             </motion.a>
 
             <motion.a
-              href="#"
-              download
+              href={resumePdf}
+              download="Shivam_Kumar_Resume.pdf"
               whileHover={{ scale: 1.05, y: -8, backgroundColor: "rgba(255,255,255,0.05)" }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-transparent border-2 border-white/10 text-white rounded-2xl font-black tracking-wide flex items-center gap-3 transition-all hover:border-primary/40"

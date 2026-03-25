@@ -53,7 +53,7 @@ const FloatingShapes = () => {
 
 const ParticleField = () => {
   const ref = useRef();
-  
+
   const positions = useMemo(() => {
     const p = new Float32Array(4000 * 3);
     for (let i = 0; i < 4000; i++) {
@@ -102,7 +102,7 @@ const Background3D = () => {
   const mouse = useRef([0, 0]);
 
   return (
-    <div 
+    <div
       className="fixed inset-0 -z-10 w-full h-full bg-[#020617] overflow-hidden pointer-events-none"
       onMouseMove={(e) => {
         mouse.current = [
@@ -113,15 +113,15 @@ const Background3D = () => {
     >
       {/* Deep Space Dust Gradients */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(59,130,246,0.15)_0%,rgba(2,6,23,1)_80%)]" />
-      
+
       {/* 3D Render Engine */}
       <Canvas camera={{ position: [0, 0, 10], fov: 50 }} dpr={[1, 2]} gl={{ antialias: true, alpha: true }}>
         <pointLight position={[10, 10, 10]} intensity={1} color="#ffffff" />
         <ambientLight intensity={0.5} />
-        
+
         <FloatingShapes />
         <ParticleField />
-        
+
         {/* Floating Architectural Cubes */}
         <WireframeCube position={[-8, 4, -10]} size={2} color="#3b82f6" speed={0.2} />
         <WireframeCube position={[10, -5, -12]} size={3} color="#818cf8" speed={0.15} />
@@ -139,7 +139,7 @@ const Background3D = () => {
 
       {/* Cinematic Grid Overlay */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_80%,transparent_100%)] opacity-40" />
-      
+
       {/* Atmospheric noise layer */}
       <div className="absolute inset-0 opacity-[0.02] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
     </div>
