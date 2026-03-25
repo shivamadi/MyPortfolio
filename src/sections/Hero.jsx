@@ -204,7 +204,7 @@ const Hero = () => {
         >
           <TiltCard intensity={35}>
             <div
-              className="relative w-72 h-[400px] md:w-[450px] md:h-[560px] mx-auto transform-gpu"
+              className="relative w-56 h-[300px] md:w-[340px] md:h-[420px] mx-auto transform-gpu"
               style={{ transformStyle: 'preserve-3d' }}
             >
               <div className="absolute inset-0 rounded-[3rem] bg-gradient-to-tr from-primary via-indigo-600 to-transparent p-1 shadow-[0_40px_100px_rgba(59,130,246,0.5)] overflow-hidden">

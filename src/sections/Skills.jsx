@@ -4,13 +4,13 @@ import TiltCard from '../components/TiltCard';
 const SKILLS_DATA = [
   {
     category: 'Languages',
-    icon_slugs: ['cpp', 'c', 'java', 'js', 'py', 'ts'],
+    icon_slugs: ['cpp', 'c', 'java', 'js', 'python', 'ts'],
     skills: ['C++', 'C', 'Java', 'JavaScript', 'Python', 'TypeScript'],
   },
   {
     category: 'Frameworks/Libraries',
-    icon_slugs: ['html', 'css', 'tailwind', 'react', 'nextjs', 'nodejs', 'express'],
-    skills: ['HTML/CSS', 'Tailwind CSS', 'React.js', 'Next.js', 'Node.js', 'Express.js'],
+    icon_slugs: ['html', 'css3', 'tailwindcss', 'react', 'nextjs', 'nodejs', 'express'],
+    skills: ['HTML', 'CSS', 'Tailwind CSS', 'React.js', 'Next.js', 'Node.js', 'Express.js'],
   },
   {
     category: 'Databases & ORM',
@@ -24,7 +24,7 @@ const SKILLS_DATA = [
   },
   {
     category: 'Soft Skills',
-    icon_slugs: ['discord', 'notion', 'slack'], 
+    icon_slugs: ['discord', 'notion', 'slack'],
     skills: ['Problem-Solving', 'Leadership', 'Team Collaboration'],
   },
 ];
