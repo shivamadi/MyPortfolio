@@ -77,7 +77,7 @@ const About = () => {
 
                 <ul className="space-y-4" style={{ transform: "translateZ(30px)" }}>
                   {[
-                    { label: 'Degree', val: 'B.Tech CSE (Hons)' },
+                    { label: 'Degree', val: 'B.Tech CSE' },
                     { label: 'Location', val: 'Muzaffarpur / Phagwara' },
                     { label: 'Status', val: 'Actively Building' }
                   ].map((item, i) => (
